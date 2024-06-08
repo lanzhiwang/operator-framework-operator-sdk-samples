@@ -1,3 +1,13 @@
+
+# 架构图
+
+![](./images/01.png)
+
+# 流程图
+
+![](./images/02.png)
+
+
 ```bash
 
 $ operator-sdk olm install
@@ -11,14 +21,16 @@ https://github.com/operator-framework/operator-lifecycle-manager
 ```
 
 customresourcedefinition.apiextensions.k8s.io
-	catalogsources.operators.coreos.com
-	clusterserviceversions.operators.coreos.com
-	installplans.operators.coreos.com
-	olmconfigs.operators.coreos.com
-	operatorconditions.operators.coreos.com
-	operatorgroups.operators.coreos.com
-	operators.operators.coreos.com
-	subscriptions.operators.coreos.com
+  clusterserviceversions.operators.coreos.com
+  catalogsources.operators.coreos.com
+  subscriptions.operators.coreos.com
+  installplans.operators.coreos.com
+  operatorgroups.operators.coreos.com
+  operatorconditions.operators.coreos.com
+
+  olmconfigs.operators.coreos.com
+  operators.operators.coreos.com
+
 
 namespace
 	olm
