@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 # set -x
 
-echo "***************** olmconfigs.operators.coreos.com *****************"
-kubectl get olmconfigs.operators.coreos.com -A
-echo ""
-
-echo "***************** operatorgroups.operators.coreos.com *****************"
-kubectl get operatorgroups.operators.coreos.com -A
-echo ""
-
 echo "***************** clusterserviceversions.operators.coreos.com *****************"
 kubectl get clusterserviceversions.operators.coreos.com -A
 echo ""
@@ -17,20 +9,27 @@ echo "***************** catalogsources.operators.coreos.com *****************"
 kubectl get catalogsources.operators.coreos.com -A
 echo ""
 
+echo "***************** subscriptions.operators.coreos.com *****************"
+kubectl get subscriptions.operators.coreos.com -A
+echo ""
+
 echo "***************** installplans.operators.coreos.com *****************"
 kubectl get installplans.operators.coreos.com -A
+echo ""
+
+echo "***************** operatorgroups.operators.coreos.com *****************"
+kubectl get operatorgroups.operators.coreos.com -A
 echo ""
 
 echo "***************** operatorconditions.operators.coreos.com *****************"
 kubectl get operatorconditions.operators.coreos.com -A
 echo ""
 
+echo "***************** olmconfigs.operators.coreos.com *****************"
+kubectl get olmconfigs.operators.coreos.com -A
+echo ""
 echo "***************** operators.operators.coreos.com *****************"
 kubectl get operators.operators.coreos.com -A
-echo ""
-
-echo "***************** subscriptions.operators.coreos.com *****************"
-kubectl get subscriptions.operators.coreos.com -A
 echo ""
 
 echo "***************** packagemanifests *****************"
